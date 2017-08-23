@@ -8,6 +8,7 @@ after_success:
   notifications:
     email:
       recipients:
-      - khand@stud.ntnu.no
+        - one@example.com
+        - other@example.com
       on_success: never # default: change
       on_failure: always # default: always
