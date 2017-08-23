@@ -4,10 +4,10 @@ script: mvn clean verify
 jdk:
   - oraclejdk8
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
   notifications:
     email:
       recipients:
+      - khand@stud.ntnu.no
       on_success: never # default: change
-      on_failure: always
-      - khand@stud.ntnu.no # default: always
+      on_failure: always # default: always
